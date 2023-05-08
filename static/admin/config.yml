@@ -80,4 +80,13 @@ collections:
           summary: '{{fields.image}}',
           field: { label: 'Image', name: 'image', widget: 'image' },
         }
-      - { name: 'pdf_field_name', label: 'PDF Field Label', type: 'file', config: { allowed_extensions: 'pdf', upload_folder: 'pdfs' } }
+      - {
+          name: 'pdf_field_name',
+          label: 'PDF Field',
+          widget: 'file',
+          media_library: {
+            config: {
+              multiple: true
+            }
+          }
+        }
