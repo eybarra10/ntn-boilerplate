@@ -80,3 +80,4 @@ collections:
           summary: '{{fields.image}}',
           field: { label: 'Image', name: 'image', widget: 'image' },
         }
+      - { name: 'pdf_field_name', label: 'PDF Field Label', type: 'file', options: { allowed_file_extensions: 'pdf'} }
